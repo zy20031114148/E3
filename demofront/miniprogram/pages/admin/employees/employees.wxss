@@ -1,0 +1,53 @@
+.page { padding-bottom: 40rpx; }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  gap: 20rpx;
+}
+.search-input {
+  flex: 1;
+  height: 72rpx;
+  background: #fff;
+  border-radius: 12rpx;
+  padding: 0 24rpx;
+  font-size: 26rpx;
+  border: 2rpx solid #e8e8e8;
+}
+.search-btn {
+  background: #1a7cee;
+  color: #fff;
+  font-size: 26rpx;
+  padding: 0 24rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  border-radius: 12rpx;
+  border: none;
+  white-space: nowrap;
+}
+
+.emp-name {
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.emp-meta {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 6rpx;
+}
+.emp-actions {
+  display: flex;
+  gap: 16rpx;
+}
+.action-btn {
+  font-size: 24rpx;
+  color: #1a7cee;
+  padding: 6rpx 16rpx;
+  border: 2rpx solid #1a7cee;
+  border-radius: 8rpx;
+}
+.action-del {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+}

@@ -1,0 +1,16 @@
+<view class="page">
+  <block wx:for="{{roles}}" wx:key="id">
+    <view class="card">
+      <view class="role-header" bindtap="toggleExpand" data-id="{{item.id}}">
+        <text class="role-name">{{item.name}}</text>
+        <text class="expand-icon">{{expandedId === item.id ? '▼' : '▶'}}</text>
+      </view>
+      <view class="perm-list" wx:if="{{expandedId === item.id}}">
+        <label class="perm-item" wx:for="{{allPermissions}}" wx:key="key" wx:if="{{key !== 'all'}}">
+          <checkbox value="{{item.key}}" checked="{{item.permissions.includes(item.key === 'all' ? 'all' : key)}}" bindchange="onPermChange" data-role="{{item.id}}" data-perm="{{key}}"/>
+          <text class="perm-name">{{item.name}}</text>
+        </label>
+      </view>
+    </view>
+  </block>
+</view>

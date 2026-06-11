@@ -1,0 +1,17 @@
+<view class="page">
+  <view class="card">
+    <view class="flex-header">
+      <text class="section-title">2026年节假日</text>
+      <button class="add-btn" bindtap="onAdd">+ 新增</button>
+    </view>
+    <block wx:for="{{list}}" wx:key="id">
+      <view class="list-item">
+        <view>
+          <text class="holiday-name">{{item.name}}</text>
+          <view class="holiday-meta">{{item.date}} · {{item.type}}</view>
+        </view>
+        <text class="action-btn action-del" bindtap="onDelete" data-id="{{item.id}}">删除</text>
+      </view>
+    </block>
+  </view>
+</view>

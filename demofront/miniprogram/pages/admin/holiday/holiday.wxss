@@ -1,0 +1,19 @@
+.page { padding-bottom: 40rpx; }
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.section-title { font-size: 30rpx; font-weight: 500; }
+.add-btn {
+  background: #1a7cee; color: #fff; font-size: 24rpx;
+  padding: 6rpx 24rpx; border-radius: 10rpx; border: none;
+}
+.holiday-name { font-size: 30rpx; font-weight: 500; }
+.holiday-meta { font-size: 24rpx; color: #999; margin-top: 6rpx; }
+.action-btn {
+  font-size: 24rpx; color: #1a7cee;
+  padding: 6rpx 16rpx; border: 2rpx solid #1a7cee; border-radius: 8rpx;
+}
+.action-del { color: #ff4d4f; border-color: #ff4d4f; }

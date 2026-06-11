@@ -1,0 +1,21 @@
+<view class="page has-tabbar">
+  <view class="card">
+    <view class="flex-header">
+      <text class="section-title">部门列表</text>
+      <button class="add-btn" bindtap="onAdd">+ 新增</button>
+    </view>
+    <block wx:for="{{list}}" wx:key="id">
+      <view class="list-item">
+        <view>
+          <text class="dept-name">{{item.name}}</text>
+          <view class="dept-meta">负责人：{{item.manager}} · {{item.count}}人</view>
+        </view>
+        <view class="emp-actions">
+          <text class="action-btn" bindtap="onEdit" data-item="{{item}}">编辑</text>
+          <text class="action-btn action-del" bindtap="onDelete" data-id="{{item.id}}">删除</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<tabBar activeTab="1"></tabBar>

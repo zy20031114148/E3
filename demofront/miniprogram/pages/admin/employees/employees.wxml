@@ -1,0 +1,24 @@
+<view class="page has-tabbar">
+  <view class="search-bar">
+    <input class="search-input" placeholder="搜索员工姓名" value="{{keyword}}" bindinput="onSearch" />
+    <button class="search-btn" bindtap="onAdd">+ 新增</button>
+  </view>
+
+  <view class="card">
+    <block wx:for="{{list}}" wx:key="id">
+      <view class="list-item">
+        <view>
+          <text class="emp-name">{{item.name}}</text>
+          <view class="emp-meta">{{item.department}} · {{item.position}} · {{item.phone}}</view>
+        </view>
+        <view class="emp-actions">
+          <text class="action-btn" bindtap="onEdit" data-item="{{item}}">编辑</text>
+          <text class="action-btn action-del" bindtap="onDelete" data-id="{{item.id}}">删除</text>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="empty-state" wx:if="{{list.length === 0}}">暂无员工数据</view>
+</view>
+<tabBar activeTab="0"></tabBar>

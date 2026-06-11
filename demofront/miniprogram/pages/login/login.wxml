@@ -1,0 +1,22 @@
+<view class="login-container">
+  <view class="login-header">
+    <image class="logo" src="/images/logo.png" mode="aspectFit"></image>
+    <text class="title">企业访客系统</text>
+    <text class="subtitle">微信小程序</text>
+  </view>
+
+  <view class="login-form">
+    <view class="input-group">
+      <text class="input-label">用户名</text>
+      <input class="input-field" placeholder="请输入用户名" value="{{username}}" bindinput="onUsernameInput"></input>
+    </view>
+    <view class="input-group">
+      <text class="input-label">密码</text>
+      <input class="input-field" type="password" placeholder="请输入密码" value="{{password}}" bindinput="onPasswordInput"></input>
+    </view>
+
+    <button class="btn-primary login-btn" bindtap="onLogin" loading="{{loading}}">登 录</button>
+
+    <view class="hint-text">预置账号：admin / zhangsan / lisi / guard (密码123456)</view>
+  </view>
+</view>
