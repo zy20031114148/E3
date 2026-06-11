@@ -1,0 +1,53 @@
+.page { padding-bottom: 40rpx; }
+.tabs {
+  display: flex;
+  background: #fff;
+  padding: 0 30rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+}
+.tab {
+  padding: 24rpx 30rpx;
+  font-size: 28rpx;
+  color: #666;
+  position: relative;
+}
+.tab.active {
+  color: #1a7cee;
+  font-weight: 500;
+}
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 30rpx;
+  right: 30rpx;
+  height: 4rpx;
+  background: #1a7cee;
+  border-radius: 2rpx;
+}
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.record-company { font-size: 32rpx; font-weight: 600; }
+.info-row { display: flex; margin-bottom: 10rpx; font-size: 26rpx; color: #555; }
+.info-row .label { color: #999; width: 100rpx; }
+.record-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24rpx;
+  margin-top: 24rpx;
+  padding-top: 24rpx;
+  border-top: 2rpx solid #f0f0f0;
+}
+.btn-approve, .btn-reject {
+  border: none;
+  font-size: 26rpx;
+  padding: 12rpx 40rpx;
+  border-radius: 10rpx;
+  color: #fff;
+}
+.btn-approve { background: #52c41a; }
+.btn-reject { background: #ff4d4f; }
